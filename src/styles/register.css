@@ -1,0 +1,20 @@
+.register-page {
+  min-height: 100vh;
+  background-color: #090d16;
+  background-image:
+    linear-gradient(rgba(79, 219, 200, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(79, 219, 200, 0.04) 1px, transparent 1px);
+  background-size: 42px 42px;
+}
+
+.register-page .register-spotlight {
+  background: linear-gradient(135deg, #172033, #090d16);
+}
+
+.register-page .teal-aura {
+  box-shadow: 0 0 18px rgba(79, 219, 200, 0.35);
+}
+
+.register-rating-star {
+  font-variation-settings: 'FILL' 1;
+}

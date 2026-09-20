@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --color-background: #090d16;
+  --color-on-background: #f8fafc;
+  --color-surface: #0f172a;
+  --color-surface-container: #172033;
+  --color-surface-container-low: #111827;
+  --color-surface-container-lowest: #090d16;
+  --color-surface-container-high: #1e293b;
+  --color-surface-container-highest: #263449;
+  --color-surface-variant: #273449;
+  --color-on-surface: #f8fafc;
+  --color-on-surface-variant: #a7b2c4;
+  --color-primary: #4fdbc8;
+  --color-primary-container: #17a995;
+  --color-on-primary: #06201d;
+  --color-on-primary-container: #031b18;
+  --color-primary-fixed: #9bf5e7;
+  --color-secondary: #a78bfa;
+  --color-secondary-container: #6d4bc1;
+  --color-secondary-fixed: #e9ddff;
+  --color-on-secondary-container: #f5efff;
+  --color-tertiary: #8be28f;
+  --color-tertiary-container: #2e7d45;
+  --color-tertiary-fixed: #b6f5b8;
+  --color-error: #ff716c;
+  --color-outline: #8792a5;
+  --color-outline-variant: #465267;
+  --font-body-md: 'Manrope', sans-serif;
+  --font-body-sm: 'Manrope', sans-serif;
+  --font-label-sm: 'Manrope', sans-serif;
+  --font-label-md: 'Manrope', sans-serif;
+  --font-label-lg: 'Manrope', sans-serif;
+  --font-title-md: 'Manrope', sans-serif;
+  --font-title-lg: 'Manrope', sans-serif;
+  --font-headline-sm: 'Manrope', sans-serif;
+  --font-headline-lg: 'Manrope', sans-serif;
+  --text-body-sm: 0.75rem;
+  --text-body-md: 0.875rem;
+  --text-label-sm: 0.6875rem;
+  --text-label-md: 0.8125rem;
+  --text-label-lg: 0.875rem;
+  --text-title-md: 1rem;
+  --text-title-lg: 1.25rem;
+  --text-headline-sm: 1.125rem;
+  --text-headline-md: 1.75rem;
+  --text-headline-lg: 2.25rem;
+}
+
+:root {
+  --landing-bg: #090d16;
+  --landing-surface: rgba(15, 23, 42, 0.72);
+  --landing-border: rgba(71, 85, 105, 0.5);
+  --landing-brand: #2dd4bf;
+  --landing-text: #f8fafc;
+}
+
+.landing-page {
+  min-height: 100vh;
+  background: var(--landing-bg);
+  color: var(--landing-text);
+  font-family: 'Manrope', sans-serif;
+}
+
+.landing-page button,
+.landing-page input,
+.landing-page select {
+  font: inherit;
+}
+
+.glass-panel {
+  background: var(--landing-surface);
+  border-color: var(--landing-border);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.card-glow:hover {
+  box-shadow: 0 18px 45px rgba(20, 184, 166, 0.12);
+}
+
+.animate-fade-in {
+  animation: landing-fade-in 180ms ease-out both;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+@keyframes landing-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-in {
+    animation: none;
+  }
+}
