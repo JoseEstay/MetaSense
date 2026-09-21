@@ -12,6 +12,7 @@ dist
 dist-ssr
 *.local
 package-lock.json
+package.json
 pnpm-lock.yaml
 vite.config.js
 eslint.config.js
